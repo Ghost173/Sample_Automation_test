@@ -4,6 +4,7 @@ base/DriverManager.class
 testcase/MakeAnOrderTest.class
 normal/Basictest.class
 objects/BillingDeatils.class
+testcase/NavigationTest.class
 pages/HomaPage.class
 pages/CheckoutPage.class
 utils/JacksonUtils.class

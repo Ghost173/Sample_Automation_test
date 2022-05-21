@@ -1,65 +1,141 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestSuite" time="8.672" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="4.978" tests="3" errors="0" skipped="2" failures="1">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.15+10-Ubuntu-0ubuntu0.22.04.1"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="browser" value="chrome"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/ghost/IdeaProjects/Automation_sample_updated"/>
-    <property name="java.vm.vendor" value="Private Build"/>
-    <property name="java.vendor.url" value="Unknown"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="user.country" value="US"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/ghost/IdeaProjects/Automation_sample_updated"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="11.0.15+10-Ubuntu-0ubuntu0.22.04.1"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/usr/share/maven/conf"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="55.0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.15.0-30-generic"/>
-    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
-    <property name="user.home" value="/home/ghost"/>
-    <property name="user.timezone" value="Asia/Colombo"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
-    <property name="user.name" value="ghost"/>
-    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
-    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ghost/IdeaProjects/Automation_sample_updated/target/test-classes:/home/ghost/IdeaProjects/Automation_sample_updated/target/classes:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.4/selenium-java-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.4/selenium-api-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.4/selenium-chrome-driver-4.1.4.jar:/home/ghost/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/home/ghost/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/home/ghost/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/home/ghost/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/ghost/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/ghost/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/ghost/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/ghost/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/ghost/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.4/selenium-chromium-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.4/selenium-json-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v100/4.1.4/selenium-devtools-v100-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.1.4/selenium-devtools-v101-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.4/selenium-devtools-v85-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v99/4.1.4/selenium-devtools-v99-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.4/selenium-edge-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.4/selenium-firefox-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.4/selenium-ie-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.4/selenium-opera-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.4/selenium-remote-driver-4.1.4.jar:/home/ghost/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-codec-http/4.1.76.Final/netty-codec-http-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.76.Final/netty-transport-classes-kqueue-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.76.Final/netty-transport-native-kqueue-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-api/1.13.0/opentelemetry-api-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-context/1.13.0/opentelemetry-context-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.13.0/opentelemetry-exporter-logging-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.13.0-alpha/opentelemetry-sdk-metrics-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.13.0-alpha/opentelemetry-sdk-logs-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.13.0/opentelemetry-sdk-common-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.13.0/opentelemetry-sdk-extension-autoconfigure-spi-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.13.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.13.0/opentelemetry-sdk-trace-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.13.0/opentelemetry-sdk-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.13.0-alpha/opentelemetry-semconv-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/home/ghost/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/home/ghost/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/ghost/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/ghost/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/ghost/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/ghost/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/ghost/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/ghost/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/ghost/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.4/selenium-http-4.1.4.jar:/home/ghost/.m2/repository/dev/failsafe/failsafe/3.2.3/failsafe-3.2.3.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.4/selenium-safari-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.4/selenium-support-4.1.4.jar:/home/ghost/.m2/repository/org/testng/testng/7.6.0/testng-7.6.0.jar:/home/ghost/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/ghost/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/ghost/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/ghost/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/home/ghost/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.1/webdrivermanager-5.1.1.jar:/home/ghost/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/home/ghost/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/ghost/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/ghost/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/home/ghost/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/home/ghost/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/home/ghost/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/home/ghost/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/ghost/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/ghost/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/home/ghost/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/home/ghost/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/home/ghost/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dbrowser=chrome"/>
-    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="java.vendor.url" value="Unknown"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/ghost/IdeaProjects/Automation_sample_updated/target/surefire/surefirebooter2204841932601981587.jar /home/ghost/IdeaProjects/Automation_sample_updated/target/surefire 2022-05-22T01-19-37_483-jvmRun1 surefire5704105425221763675tmp surefire_04984056520506016701tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/ghost/IdeaProjects/Automation_sample_updated/target/test-classes:/home/ghost/IdeaProjects/Automation_sample_updated/target/classes:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.4/selenium-java-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.4/selenium-api-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.4/selenium-chrome-driver-4.1.4.jar:/home/ghost/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/home/ghost/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/home/ghost/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/home/ghost/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/ghost/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/ghost/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/ghost/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/ghost/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/ghost/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.4/selenium-chromium-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.4/selenium-json-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v100/4.1.4/selenium-devtools-v100-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.1.4/selenium-devtools-v101-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.4/selenium-devtools-v85-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v99/4.1.4/selenium-devtools-v99-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.4/selenium-edge-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.4/selenium-firefox-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.4/selenium-ie-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.4/selenium-opera-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.4/selenium-remote-driver-4.1.4.jar:/home/ghost/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-codec-http/4.1.76.Final/netty-codec-http-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.76.Final/netty-transport-classes-kqueue-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.76.Final/netty-transport-native-kqueue-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/home/ghost/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-api/1.13.0/opentelemetry-api-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-context/1.13.0/opentelemetry-context-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.13.0/opentelemetry-exporter-logging-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.13.0-alpha/opentelemetry-sdk-metrics-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.13.0-alpha/opentelemetry-sdk-logs-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.13.0/opentelemetry-sdk-common-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.13.0/opentelemetry-sdk-extension-autoconfigure-spi-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.13.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.13.0/opentelemetry-sdk-trace-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.13.0/opentelemetry-sdk-1.13.0.jar:/home/ghost/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.13.0-alpha/opentelemetry-semconv-1.13.0-alpha.jar:/home/ghost/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/home/ghost/.m2/repository/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar:/home/ghost/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/ghost/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/ghost/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/ghost/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/ghost/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/ghost/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/ghost/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/ghost/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/ghost/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.4/selenium-http-4.1.4.jar:/home/ghost/.m2/repository/dev/failsafe/failsafe/3.2.3/failsafe-3.2.3.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.4/selenium-safari-driver-4.1.4.jar:/home/ghost/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.4/selenium-support-4.1.4.jar:/home/ghost/.m2/repository/org/testng/testng/7.6.0/testng-7.6.0.jar:/home/ghost/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/ghost/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/ghost/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/ghost/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/home/ghost/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.1/webdrivermanager-5.1.1.jar:/home/ghost/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/home/ghost/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/ghost/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/ghost/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/home/ghost/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/home/ghost/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/home/ghost/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/home/ghost/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/home/ghost/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/ghost/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/ghost/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/home/ghost/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/home/ghost/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/home/ghost/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/ghost/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ghost"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="11.0.15"/>
-    <property name="java.vendor" value="Private Build"/>
-    <property name="maven.home" value="/usr/share/maven"/>
-    <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/ghost/IdeaProjects/Automation_sample_updated"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/ghost/IdeaProjects/Automation_sample_updated/target/surefire/surefirebooter2204841932601981587.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.15+10-Ubuntu-0ubuntu0.22.04.1"/>
+    <property name="user.name" value="ghost"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.0-30-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="firefox"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ghost/.m2/repository"/>
     <property name="java.vendor.url.bug" value="Unknown"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.15"/>
+    <property name="user.dir" value="/home/ghost/IdeaProjects/Automation_sample_updated"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="/home/ghost/.cache/selenium/geckodriver/linux64/0.31.0/geckodriver"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="11.0.15+10-Ubuntu-0ubuntu0.22.04.1"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase classname="testcase.MakeAnOrderTest" name="makeAnOderFromStorePage" time="8.672"/>
+  <testcase name="startDriver[firefox](0)" classname="testcase.NavigationTest" time="4.796">
+    <failure message="Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;ghost&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-30-generic&apos;, java.version: &apos;11.0.15&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'ghost', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-30-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:106)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:86)
+	at base.DriverManager.initializeDriver(DriverManager.java:36)
+	at base.BaseTest.startDriver(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></failure>
+    <system-out><![CDATA[fxProfileorg.openqa.selenium.firefox.FirefoxProfile@19d481b
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1653162579306	geckodriver	INFO	Listening on 127.0.0.1:52644
+1653162579693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58811" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilee0F0FH"
+Gtk-Message: 01:19:39.860: Failed to load module "canberra-gtk-module"
+Gtk-Message: 01:19:39.861: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+]]></system-err>
+  </testcase>
+  <testcase name="naviageStorepageFromHome" classname="testcase.NavigationTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1&#10;Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;&#10;System info: host: &apos;ghost&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-30-generic&apos;, java.version: &apos;11.0.15&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]"/>
+  </testcase>
+  <testcase name="quitDriver" classname="testcase.NavigationTest" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

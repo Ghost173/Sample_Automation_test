@@ -4,7 +4,6 @@ import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class StorePage extends BasePage {
 
@@ -20,6 +19,11 @@ public class StorePage extends BasePage {
 
     public StorePage enterTextInSearchFlt (String txt) {
         driver.findElement(searchFld).sendKeys(txt);
+        return this;
+    }
+
+    public StorePage load() {
+        load("/store");
         return this;
     }
 

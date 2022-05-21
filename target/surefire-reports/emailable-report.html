@@ -8,11 +8,53 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,404</td><td></td><td></td></tr>
+<tr><th colspan="8">Admin</th></tr>
+<tr><td><a href="#t0">chrome</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">4,382</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcase.MakeAnOrderTest</td><td><a href="#m0">makeAnOderFromStorePage</a></td><td rowspan="1">1652992499182</td><td rowspan="1">8671</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Admin</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testcase.NavigationTest</td><td><a href="#m0">startDriver</a></td><td rowspan="1">1653162578571</td><td rowspan="1">4314</td></tr><tr><th colspan="4">chrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testcase.NavigationTest</td><td><a href="#m1">quitDriver</a></td><td rowspan="1">1653162582902</td><td rowspan="1">0</td></tr><tr><th colspan="4">chrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testcase.NavigationTest</td><td><a href="#m2">naviageStorepageFromHome</a></td><td rowspan="1">1653162582897</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">testcase.MakeAnOrderTest#makeAnOderFromStorePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chrome</h2><h3 id="m0">testcase.NavigationTest#startDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ghost&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-30-generic&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:106)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:86)
+	at base.DriverManager.initializeDriver(DriverManager.java:36)
+	at base.BaseTest.startDriver(BaseTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcase.NavigationTest#quitDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcase.NavigationTest#naviageStorepageFromHome</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 1
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;ghost&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-30-generic&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:106)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:86)
+	at base.DriverManager.initializeDriver(DriverManager.java:36)
+	at base.BaseTest.startDriver(BaseTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
